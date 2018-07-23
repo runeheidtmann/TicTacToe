@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:KrydsOgBolle"
+             x:Class="KrydsOgBolle.MainPage"
+             Padding="10"
+             BackgroundColor="#1e272e">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Button">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="48" />
+                <Setter Property="TextColor" Value="#ffa801" />
+                <Setter Property="BackgroundColor" Value="#1e272e" />
+                <Setter Property="BorderColor" Value="#485460" />
+                <Setter Property="BorderWidth" Value="2" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+    
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="120" />
+        </Grid.RowDefinitions>
+       <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label  Text="X to play" Grid.Row="0" Grid.ColumnSpan="3" BackgroundColor="#0be881"
+                x:Name="lblX"
+                HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                TextColor="#1e272e"
+                FontSize="32"
+                FontAttributes="Bold"/>
+
+        <Button Style="{StaticResource labelStyle}" Grid.Row="1" Grid.Column="0" Text="" x:Name="a1" Clicked="a1_Clicked" />
+        <Button Style="{StaticResource labelStyle}" Grid.Row="1" Grid.Column="1" Text="" x:Name="a2" Clicked="a2_Clicked" />
+        <Button Style="{StaticResource labelStyle}"  Grid.Row="1" Grid.Column="2" Text="" x:Name="a3" Clicked="a3_Clicked" />
+
+        <Button Style="{StaticResource labelStyle}" Grid.Row="2" Grid.Column="0" Text="" x:Name="b1" Clicked="b1_Clicked"/>
+        <Button Style="{StaticResource labelStyle}" Grid.Row="2" Grid.Column="1" Text="" x:Name="b2" Clicked="b2_Clicked"/>
+        <Button Style="{StaticResource labelStyle}" Grid.Row="2" Grid.Column="2" Text="" x:Name="b3" Clicked="b3_Clicked"/>
+
+        <Button Style="{StaticResource labelStyle}" Grid.Row="3" Grid.Column="0" Text="" x:Name="c1" Clicked="c1_Clicked"/>
+        <Button Style="{StaticResource labelStyle}" Grid.Row="3" Grid.Column="1" Text="" x:Name="c2" Clicked="c2_Clicked"/>
+        <Button Style="{StaticResource labelStyle}" Grid.Row="3" Grid.Column="2" Text="" x:Name="c3" Clicked="c3_Clicked"/>
+        <Label  Text="" Grid.Row="4" Grid.ColumnSpan="3" BackgroundColor="#1e272e"
+                 x:Name="lblO"
+                HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                FontSize="32"
+                TextColor="#1e272e"
+                FontAttributes="Bold"/>
+
+
+    </Grid>
+
+</ContentPage>
